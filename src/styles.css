@@ -3,7 +3,18 @@ body {
   padding: 0px;
 }
 
-/* res has a background-color of lightgray, a border that is solid, a height of 48px, and a font-size of 20px */
+.container{
+display: flex;
+height: 100vh;
+width: 100vw;
+align-items: center;
+justify-content: center;
+}
+
+.inner-container{
+width: 90vw;
+}
+
 #res {
   height: 48px;
   font-size: 20px;
@@ -72,4 +83,10 @@ body {
   font-size: 18px;
   margin: 0px;
   float: left;
+}
+
+@media (min-width: 600px) {
+  .input,.up,.down{
+      width: 90vw;
+  }
 }
